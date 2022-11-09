@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [16, 17]
+        node: [12]
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11

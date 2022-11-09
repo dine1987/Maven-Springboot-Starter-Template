@@ -36,3 +36,5 @@ jobs:
         path: |
           ${{ github.workspace }}/target
           ${{ github.workspace }}/reports
+    - name: Upload Test
+      run: echo "Test"

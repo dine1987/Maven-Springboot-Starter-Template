@@ -28,7 +28,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - run: |
-        echo "::remove-matcher
+       echo "::remove-matcher owner=eslint-compact::"
+       echo "::remove-matcher owner=eslint-stylish::"
     - name: Build the Project
       run: mvn clean install -DskipTests
     - name: Upload target folder

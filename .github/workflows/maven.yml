@@ -30,6 +30,7 @@ jobs:
     - run: |
        echo "::remove-matcher owner=eslint-compact::"
        echo "::remove-matcher owner=eslint-stylish::"
+       echo "::remove-matcher owner=tsc::"
     - name: Build the Project
       run: mvn clean install -DskipTests
     - name: Upload target folder

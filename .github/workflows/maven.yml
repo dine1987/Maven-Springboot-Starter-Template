@@ -16,12 +16,7 @@ on:
 
 jobs:
   Test:
-
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        node: [12]
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11

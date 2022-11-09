@@ -27,6 +27,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        annotations: false
     - name: Build the Project
       run: mvn clean install -DskipTests
     - name: Upload target folder
@@ -36,5 +37,6 @@ jobs:
         path: |
           ${{ github.workspace }}/target
           ${{ github.workspace }}/reports
+        annotations: false
     - name: Upload Test
       run: echo "Test"
